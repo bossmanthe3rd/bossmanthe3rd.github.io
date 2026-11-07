@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Himank Sharma, co-founder of Svorah</title>
+<meta name="description" content="Himank Sharma is co-founder of Svorah, DPDP compliance for engineering teams. He also takes on freelance software projects.">
+<meta name="theme-color" content="#0a0e27">
+<meta property="og:title" content="Himank Sharma, co-founder of Svorah">
+<meta property="og:description" content="DPDP compliance for engineering teams. Open to freelance software projects.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 7'%3E%3Crect width='7' height='7' fill='%23f3f4fa'/%3E%3Crect x='1' y='1' width='5' height='5' fill='%230a0e27'/%3E%3Crect x='2' y='2' width='3' height='3' fill='%23f3f4fa'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0e27;        /* same navy as the QR code */
+    --paper:#f3f4fa;
+    --dim:#a4a9d4;
+    --signal:#6b4df5;     /* the QR frame's violet, darkened for contrast */
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--ink);color:var(--paper);
+    font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-stretch:100%;font-weight:400;line-height:1.5;
+    min-height:100vh;display:flex;justify-content:center;
+    padding:clamp(28px,6vw,64px) 22px 40px;
+  }
+  main{width:100%;max-width:460px}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:3px solid var(--paper);outline-offset:3px}
+
+  /* mark: a QR finder pattern, built once on load */
+  .mark{width:44px;height:44px;display:block;margin-bottom:36px}
+  .mark rect{opacity:0;animation:place .01s steps(1) forwards}
+  .mark .a{animation-delay:.05s}.mark .b{animation-delay:.2s}.mark .c{animation-delay:.35s}
+  @keyframes place{to{opacity:1}}
+
+  h1{
+    font-size:clamp(46px,15vw,68px);line-height:.92;
+    font-weight:800;font-stretch:118%;letter-spacing:-.025em;
+    margin-bottom:14px;
+  }
+  .role{font-weight:600;font-size:17px;margin-bottom:18px}
+  .bio{color:var(--dim);font-size:16px;max-width:36ch;margin-bottom:40px}
+
+  ul{list-style:none;border-bottom:2px solid var(--paper)}
+  li{border-top:2px solid var(--paper)}
+  .row{
+    display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+    padding:17px 2px;font-size:19px;font-weight:600;font-stretch:108%;
+    transition:background-color .1s,color .1s,padding .1s;
+  }
+  .row small{font-size:14px;font-weight:400;font-stretch:100%;color:var(--dim);text-align:right;overflow-wrap:anywhere}
+  .row:hover,.row:active{background:var(--paper);color:var(--ink);padding-left:12px;padding-right:12px}
+  .row:hover small,.row:active small{color:#3b4170}
+
+  .row.main{
+    background:var(--paper);color:var(--ink);padding:20px 14px 18px;
+    flex-direction:column;align-items:flex-start;gap:4px;
+  }
+  .row.main b{font-size:26px;font-weight:800;font-stretch:120%;letter-spacing:-.01em;line-height:1.1}
+  .row.main span{font-size:15px;font-weight:400;font-stretch:100%;color:#2f3560;max-width:34ch}
+  .row.main:hover,.row.main:active{background:#fff;padding-left:14px;padding-right:14px}
+
+  .hire{background:var(--signal);margin-top:44px;padding:26px 20px 20px}
+  .hire h2{font-size:28px;line-height:1.05;font-weight:800;font-stretch:115%;letter-spacing:-.015em;margin-bottom:8px}
+  .hire p{font-size:17px;font-weight:500;margin-bottom:22px}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn{
+    display:block;text-align:center;padding:14px 8px;font-weight:700;font-size:16px;font-stretch:108%;
+    border:2px solid var(--paper);transition:background-color .1s,color .1s;
+  }
+  .btn.fill{background:var(--paper);color:var(--ink)}
+  .btn:hover,.btn:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .hire :focus-visible{outline-color:var(--ink)}
+
+  @media (prefers-reduced-motion:reduce){
+    .mark rect{animation:none;opacity:1}
+    .row,.btn{transition:none}
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges">
+    <rect class="a" width="7" height="7" fill="#f3f4fa"/>
+    <rect class="b" x="1" y="1" width="5" height="5" fill="#0a0e27"/>
+    <rect class="c" x="2" y="2" width="3" height="3" fill="#f3f4fa"/>
+  </svg>
+
+  <h1>Himank Sharma</h1>
+  <p class="role">Co-founder, Svorah</p>
+  <p class="bio">Svorah finds data privacy risks in code, cloud and websites, and helps teams fix them under India's DPDP rules. I also build software for clients.</p>
+
+  <ul>
+    <li><a class="row main" href="https://svorah.com" target="_blank" rel="noopener">
+      <b>Svorah</b><span>DPDP compliance for engineering teams. svorah.com</span>
+    </a></li>
+    <li><a class="row" href="https://github.com/bossmanthe3rd" target="_blank" rel="noopener">GitHub <small>bossmanthe3rd</small></a></li>
+    <li><a class="row" href="https://www.linkedin.com/in/himank-sharma-5946322a3/" target="_blank" rel="noopener">LinkedIn <small>Himank Sharma</small></a></li>
+    <li><a class="row" href="https://www.instagram.com/iblameady/" target="_blank" rel="noopener">Instagram <small>iblameady</small></a></li>
+    <li><a class="row" href="mailto:sharmahimank489@gmail.com">Email <small>sharmahimank489@gmail.com</small></a></li>
+  </ul>
+
+  <section class="hire">
+    <h2>Want any software solutions?</h2>
+    <p>Hit me up.</p>
+    <div class="btns">
+      <a class="btn fill" target="_blank" rel="noopener"
+         href="https://wa.me/919354902059?text=Hi%20Himank%2C%20I%20found%20you%20through%20your%20card.%20I%27d%20like%20to%20talk%20about%20a%20software%20project.">WhatsApp</a>
+      <a class="btn"
+         href="mailto:sharmahimank489@gmail.com?subject=Software%20project%20enquiry&amp;body=Hi%20Himank%2C%0A%0AI%27d%20like%20to%20talk%20about%20a%20software%20project.%0A">Email</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
